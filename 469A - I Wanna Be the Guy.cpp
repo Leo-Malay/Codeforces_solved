@@ -18,13 +18,27 @@ int main()
 	//ll T;
     //cin >> T;
 	//while(T--) solve();
-	ll k,l,m,n,d;
-	cin >> k >> l >> m >> n >> d;
-	ll a,b,c,e;
-	a = k + l;
-	b = m + n;
-	c = m * n;
-	e = k * l;
-	cout << d * (((a*c)+(e*n))-((a*b)+(c*e)))/(c*e) << endl;
+	ll n,x,y,temp;
+	cin >> n;
+	ll arr[n+1] = {0};
+	cin >> x;
+	while(x--){
+		cin >> temp;
+		arr[temp] = 1;
+	}
+	cin >> y;
+	while(y--){
+		cin >> temp;
+		arr[temp] = 1;
+	}
+	ll flag = 0;
+	f(i,1,n+1){
+		if(arr[i] == 0){
+			flag = 1;
+			break;
+		}
+	}
+	if(flag == 1) cout << "Oh, my keyboard!" << endl;
+	else cout << "I become the guy." << endl;
     return 0;
 }

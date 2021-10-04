@@ -18,13 +18,17 @@ int main()
 	//ll T;
     //cin >> T;
 	//while(T--) solve();
-	ll k,l,m,n,d;
-	cin >> k >> l >> m >> n >> d;
-	ll a,b,c,e;
-	a = k + l;
-	b = m + n;
-	c = m * n;
-	e = k * l;
-	cout << d * (((a*c)+(e*n))-((a*b)+(c*e)))/(c*e) << endl;
+	ll a,b,c,d, n = 0;
+	cin >> a >> b >> c >> d;
+	if(a == b || a == c || a == d){
+		n++;
+	}
+	if(b == c || b == d){
+		n++;
+	}
+	if(c == d){
+		n++;
+	}
+	cout << n << endl;
     return 0;
 }

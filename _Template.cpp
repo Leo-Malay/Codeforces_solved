@@ -7,8 +7,8 @@
 #define arr_len(a) sizeof(a) / sizeof(a[0])
 #define toUpper(s) transform(s.begin(), s.end(), s.begin(), ::toupper)
 #define toLower(s) transform(s.begin(), s.end(), s.begin(), ::tolower)
-#define YES cout << "YES" << endl;
-#define NO cout << "NO" << endl;
+#define YES cout << "YES" << endl
+#define NO cout << "NO" << endl
 using namespace std;
 void solve(){
 	/* Enter your code here */
@@ -17,6 +17,6 @@ int main()
 {
 	ll T;
     cin >> T;
-    while(T--) solve();
+	while(T--) solve();
     return 0;
 }

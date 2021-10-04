@@ -11,20 +11,36 @@
 #define NO cout << "NO" << endl
 using namespace std;
 void solve(){
-	/* Enter your code here */
+	ll n;
+	cin >> n;
+	ll arr[n];
+	f(i,0,n) cin >> arr[i];
+	ll start = 0, c=0, res[n][2];
+	while(start < n){
+		ll end = n-1;
+		while(start < end){
+			if(arr[start] > arr[end]){
+				res[c][0] = start;
+				res[c][1] = end;
+				c++;
+				ll temp = arr[end];
+				for(int i=end;i>start;i--)
+				{
+					arr[i] = arr[i-1];
+				}
+				arr[start] = temp;
+			}
+			else end--;
+		}
+		start++;
+	}
+	cout << c << endl;
+	f(i,0,c) cout << res[i][0]+1 << " " << res[i][1]+1 << " " << res[i][1] - res[i][0] << endl;
 }
 int main()
 {
-	//ll T;
-    //cin >> T;
-	//while(T--) solve();
-	ll k,l,m,n,d;
-	cin >> k >> l >> m >> n >> d;
-	ll a,b,c,e;
-	a = k + l;
-	b = m + n;
-	c = m * n;
-	e = k * l;
-	cout << d * (((a*c)+(e*n))-((a*b)+(c*e)))/(c*e) << endl;
+	ll T;
+    cin >> T;
+	while(T--) solve();
     return 0;
 }

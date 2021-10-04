@@ -7,24 +7,23 @@
 #define arr_len(a) sizeof(a) / sizeof(a[0])
 #define toUpper(s) transform(s.begin(), s.end(), s.begin(), ::toupper)
 #define toLower(s) transform(s.begin(), s.end(), s.begin(), ::tolower)
-#define YES cout << "YES" << endl
-#define NO cout << "NO" << endl
+#define YES cout << "YES" << endl;
+#define NO cout << "NO" << endl;
 using namespace std;
 void solve(){
 	/* Enter your code here */
 }
 int main()
 {
-	//ll T;
-    //cin >> T;
-	//while(T--) solve();
-	ll k,l,m,n,d;
-	cin >> k >> l >> m >> n >> d;
-	ll a,b,c,e;
-	a = k + l;
-	b = m + n;
-	c = m * n;
-	e = k * l;
-	cout << d * (((a*c)+(e*n))-((a*b)+(c*e)))/(c*e) << endl;
+	ll T,temp;
+    cin >> T;
+	ll arr[T+2] = {0};
+    f(i, 1, T+1){
+    	cin >> temp;
+    	arr[temp] = i;
+	}
+	f(i, 1, T+1){
+    	cout << arr[i] << " ";
+	}
     return 0;
 }

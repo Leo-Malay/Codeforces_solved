@@ -11,20 +11,21 @@
 #define NO cout << "NO" << endl
 using namespace std;
 void solve(){
-	/* Enter your code here */
+	string s;
+	ll a=0,b=0,c=0;
+	cin >> s;
+	f(i,0,s.length()){
+		if(s[i] == 'A') a++;
+		else if(s[i] == 'B') b++;
+		else c++;
+	}
+	if(a+c == b) YES;
+	else NO;
 }
 int main()
 {
-	//ll T;
-    //cin >> T;
-	//while(T--) solve();
-	ll k,l,m,n,d;
-	cin >> k >> l >> m >> n >> d;
-	ll a,b,c,e;
-	a = k + l;
-	b = m + n;
-	c = m * n;
-	e = k * l;
-	cout << d * (((a*c)+(e*n))-((a*b)+(c*e)))/(c*e) << endl;
+	ll T;
+    cin >> T;
+	while(T--) solve();
     return 0;
 }
