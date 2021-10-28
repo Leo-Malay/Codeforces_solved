@@ -18,7 +18,10 @@ ll gcd(ll ax, ll by){if(by == 0){return ax;}gcd(by, ax % by);}
 ll lcm(ll ax, ll by){return (ax * by)/gcd(ax,by);}
 ll arr_find(ll arr[], ll val){f(i, 0, Alen(arr)){if(arr[i] == val){return arr[i];}}return -1;}
 void solve(){
-	/* Enter your code here */
+	ll a, b;
+	cin >> a >> b;
+	if(a % b == 0) cout << 0 << endl;
+	else cout << b * ((a/b)+1) - a << endl;
 }
 int main()
 {

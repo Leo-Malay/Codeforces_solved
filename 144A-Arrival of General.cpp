@@ -22,8 +22,19 @@ void solve(){
 }
 int main()
 {
-	ll T;
-    cin >> T;
-	while(T--) solve();
+	//ll T;
+    //cin >> T;
+	//while(T--) solve();
+	ll n, max_pos = 0, min_pos = 0;
+	cin >> n;
+	ll arr[n];
+	cin >> arr[0];
+	f(i, 1, n){
+		cin >> arr[i];
+		if(arr[max_pos] < arr[i]) max_pos = i;
+		else if(arr[min_pos] >= arr[i]) min_pos = i;
+	}
+	if(min_pos> max_pos) cout << max_pos + n - min_pos - 1 << endl;
+	else cout << max_pos + n - min_pos - 2 << endl;
     return 0;
 }

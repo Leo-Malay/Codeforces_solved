@@ -22,8 +22,17 @@ void solve(){
 }
 int main()
 {
-	ll T;
-    cin >> T;
-	while(T--) solve();
+	//ll T;
+    //cin >> T;
+	//while(T--) solve();
+	char a;
+	ll arr[26] = {0}, s =0;
+	cin >> a;
+	while(a !='}'){
+		cin >> a;
+		if(a-'0' < 76 && a -'0'> 48) arr[(a-'0') - 49] = 1;
+	}
+	f(i,0,26) s += arr[i];
+	cout << s << endl;
     return 0;
 }
