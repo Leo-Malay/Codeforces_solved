@@ -5,17 +5,23 @@
 using namespace std;
 
 void solve() {
-	ll n, round = 1;
-	cin >> n;
-	while(n > 9){
-		if(n%10 != 0){
-			round=0;
-			break;
+	ll a,b,mi=0, k=10;
+	cin >> a >> b;
+	a = abs(b-a);
+	while(a > 0){
+		if(k > a) k = a;
+		if(a > 1 && k > 1){
+			mi += a / k;
+			a = a % k;
 		}
-		n /= 10;
+		else{
+			mi++;
+			a -= k;
+		}
 	}
-	cout << (()?:"")
+	cout << mi << endl;
 }
+
 int main()
 {
 	ll t;
@@ -23,3 +29,4 @@ int main()
 	while(t--) solve();
 	return 0;
 }
+
