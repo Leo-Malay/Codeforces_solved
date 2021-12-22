@@ -4,22 +4,14 @@
 
 using namespace std;
 
-void solve() {
-	ll n, round = 1;
-	cin >> n;
-	while(n > 9){
-		if(n%10 != 0){
-			round=0;
-			break;
-		}
-		n /= 10;
-	}
-	cout << (()?:"")
-}
 int main()
 {
-	ll t;
-	cin >> t;
-	while(t--) solve();
+	ll n,m,a,b, sum=0;
+	cin >> n >> m >> a >> b;
+	sum += b * (n/m);
+	n %= m;
+	sum += n * a;
+	cout << sum << endl;
 	return 0;
 }
+
