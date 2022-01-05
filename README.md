@@ -3,8 +3,6 @@
 
 <p>Here is the compilation of all the problems that I have solved on the Codeforces website. Hope you find it useful.</p>
 
-<br/><br/>
-
 ### How to use this repository to your benefit.
 <ol>
   <li>I solve the problems in decreasing order of total successfully solved problems.</li>
@@ -17,8 +15,6 @@
   <li>Check the code in this repo. :) (Try to understand not copy ;))</li>
   <li>There you go!</li>
 </ol>
-
-<br/><br/>
 
 ### Would Like to share what I have Learned over time.
 <ol>
