@@ -27,5 +27,5 @@
   <li>Try to use scanf and printf (They are a lot faster trust me!)</li>
   <li>Always use long long int when in doubt. Always check the constraints.</li>
   <li>Never lose Hope. Rating Doesnt matter</li>
-  <li>Don't do competitive Programming. Also do Developement alongside. (Make Website, App etc & use your competitive knowledge in that :))</li>
+  <li>Don't only do competitive Programming. Also do Developement alongside. (Make Website, App etc & use your competitive knowledge in that :))</li>
 </ol>
